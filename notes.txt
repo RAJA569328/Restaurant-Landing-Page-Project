@@ -1,0 +1,4 @@
+Fonts
+Qwigley -> 400
+Source sans pro(default) -> 700 900 400
+open sans -> 400 700 600

@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Qwigley&family=Source+Sans+3:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Restaurant landing page</title>
+  </head>
+  <body>
+    <header style="margin: 0px; padding: 0px">
+      <div style="margin: 0px; padding: 0px">
+        <nav class="navbar navbar-expand-lg" style="">
+          <div class="container-fluid" style="height: 80px">
+            <a
+              class="navbar-brand"
+              href=""
+              style="
+                font-family: 'Qwigley', cursive;
+                font-size: 80px;
+                font-weight: 400;
+                line-height: 96px;
+                color: #ffb30e;
+              "
+              >Hot Meals</a
+            >
+            <nav class="navbar bg-body-tertiary">
+              <div class="container-fluid">
+                <span class="navbar-text">
+                  <span
+                    style="
+                      font-weight: 700;
+                      font-size: 18px;
+                      line-height: 18px;
+                      text-align: center;
+                      color: #424242;
+                    "
+                    >Deliver to:</span
+                  >
+                  <img
+                    src="/images/NavBar/map-marker-altNav-Location.svg"
+                    alt="Location-Icon"
+                    style="width: 14px; height: 25px"
+                  /><span
+                    style="
+                      font-family: 'Open Sans', sans-serif;
+                      font-weight: 400;
+                      font-size: 18px;
+                      line-height: 25.2px;
+                      text-align: center;
+                      color: #424242;
+                    "
+                  >
+                    Current Location</span
+                  >
+                  <span
+                    style="
+                      font-family: 'Open Sans', sans-serif;
+                      font-weight: 700;
+                      font-size: 18px;
+                      line-height: 25.2px;
+                      text-align: center;
+                      color: #424242;
+                    "
+                    >Ashok Nagar, Chennai-600013</span
+                  >
+                </span>
+              </div>
+            </nav>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="&#xf002; Search"
+                aria-label="Search"
+                style="font-family: 'Source Sans 3', sans-serif, FontAwesome"
+              />
+              <button
+                class="btn d-flex justify-content-around align-content-center col-4"
+                style="
+                  border: 1px solid #ffac0d;
+                  font-size: 18px;
+                  font-weight: 700;
+                  line-height: 18px;
+                  text-align: center;
+                  color: #ffb800;
+                "
+                type="submit"
+              >
+                <img src="/images/NavBar/userNav-Login.svg" alt="" />Login
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div
+        class="card mb-3 container-fluid"
+        style="background-color: orange; height: "
+      >
+        <div
+          class="row g-0 d-flex justify-content-around"
+          style="margin-left: 15vh"
+        >
+          <div class="col-md-6 d-flex">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <p
+                class="card-title"
+                style="
+                  font-family: 'Qwigley', cursive;
+                  font-size: 88px;
+                  font-weight: 400;
+                  line-height: 88px;
+                  color: #ffffff;
+                "
+              >
+                Look at your fav Meals
+              </p>
+              <p
+                class="card-text"
+                style="
+                  font-weight: 400;
+                  font-size: 22px;
+                  line-height: 26.4px;
+                  color: #504f4f;
+                "
+              >
+                Within a few clicks, find meals that are accessible near you
+              </p>
+              <div class="col col-10">
+                <nav class="navbar bg-body-tertiary">
+                  <form
+                    class="container-fluid justify-content-start"
+                    style="background-color: "
+                  >
+                    <button
+                      class="btn col-3 d-flex justify-content-evenly"
+                      type="button"
+                      style="
+                        background-color: ;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #f17228;
+                      "
+                    >
+                      <img
+                        src="/images/Header/IconHeader-Bike.svg"
+                        alt=""
+                      />Delivery
+                    </button>
+                    <button
+                      class="btn col-2 d-flex justify-content-evenly"
+                      type="button"
+                      style="
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #757575;
+                      "
+                    >
+                      <img
+                        src="/images/Header/IconHead-Pickup.svg"
+                        alt=""
+                      />Pickup
+                    </button>
+                  </form>
+                </nav>
+                <nav class="navbar bg-body-tertiary">
+                  <div class="container-fluid">
+                    <form
+                      class="col d-flex justify-content-between"
+                      style="width: 30vw"
+                      role="search"
+                    >
+                      <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="&#xf3c5; Enter Your Address"
+                        aria-label="Search"
+                        style="
+                          font-family: 'Open Sans', sans-serif, FontAwesome;
+                          font-weight: 400;
+                          font-size: 18px;
+                          line-height: 25.2px;
+                        "
+                      />
+                      <div
+                        class="col col-3"
+                        style="
+                          background: linear-gradient(
+                            95.71deg,
+                            #ff7a7a -39.64%,
+                            #f75900 135.31%
+                          );
+                          border-radius: 8px;
+                          text-align: center;
+                          display: flex;
+                          justify-content: center;
+                        "
+                      >
+                        <button
+                          class="btn"
+                          type="submit"
+                          style="
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 18px;
+                            text-align: center;
+                            color: #ffffff;
+                          "
+                        >
+                          <img
+                            src="/images/Header/IconHeader-Search.svg"
+                            alt=""
+                          />Find Food
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="/images/Header/pngegg 1Header-Food.png"
+              class="img"
+              style="width: 35vw; height: 50vh"
+              alt="THALI"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="Section-One container-md" style="margin-top: 10vh">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100 border-0">
+            <img
+              src="/images/Section one/ImageSection1-vada.png"
+              class="card-img-top"
+              alt="vada"
+            />
+            <div class="card-body">
+              <p
+                class="card-title"
+                style="
+                  font-weight: 700;
+                  font-size: 22px;
+                  line-height: 26.4px;
+                  color: #424242;
+                "
+              >
+                Vada
+              </p>
+              <p
+                class="card-text bg-danger-subtle col col-md-7"
+                style="
+                  font-weight: 700;
+                  font-size: 22px;
+                  line-height: 26.4px;
+                  color: #f17228;
+                "
+              >
+                30 min Delivery
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0">
+            <img
+              src="/images/Section one/ImageSection1-Idly.png"
+              class="card-img-top"
+              alt="Idly"
+            />
+            <div class="card-body">
+              <p
+                class="card-title"
+                style="
+                  font-weight: 700;
+                  font-size: 22px;
+                  line-height: 26.4px;
+                  color: #424242;
+                "
+              >
+                Idly
+              </p>
+              <p
+                class="card-text bg-danger-subtle col col-md-7"
+                style="
+                  font-weight: 700;
+                  font-size: 22px;
+                  line-height: 26.4px;
+                  color: #f17228;
+                "
+              >
+                30 min Delivery
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0">
+            <img
+              src="/images/Section one/ImageSection1-parotta.png"
+              class="card-img-top"
+              alt="Parotta"
+            />
+            <div class="card-body">
+              <p
+                class="card-title"
+                style="
+                  font-weight: 700;
+                  font-size: 22px;
+                  line-height: 26.4px;
+                  color: #424242;
+                "
+              >
+                Parotta
+              </p>
+              <p
+                class="card-text bg-danger-subtle col col-md-7"
+                style="
+                  font-weight: 700;
+                  font-size: 22px;
+                  line-height: 26.4px;
+                  color: #f17228;
+                "
+              >
+                30 min Delivery
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0">
+            <img
+              src="/images/Section one/ImageSection1-Kichiadi.png"
+              class="card-img-top"
+              alt="Kichadi"
+            />
+            <div class="card-body">
+              <p
+                class="card-title"
+                style="
+                  font-weight: 700;
+                  font-size: 22px;
+                  line-height: 26.4px;
+                  color: #424242;
+                "
+              >
+                Kichadi
+              </p>
+              <p
+                class="card-text bg-danger-subtle col col-md-7"
+                style="
+                  font-weight: 700;
+                  font-size: 22px;
+                  line-height: 26.4px;
+                  color: #f17228;
+                "
+              >
+                30 min Delivery
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="Section-Two container col col-md-12"
+      style="margin-top: 15vh"
+    >
+      <div>
+        <div
+          style="
+            text-align: center;
+            font-weight: 700;
+            font-size: 43px;
+            line-height: 48px;
+            color: #f17228;
+          "
+        >
+          How does it work
+        </div>
+        <div class="row row-cols-3" style="margin-top: 8vh">
+          <div class="card mb-3 border-0">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/images/Section two/IconSection2-Daily.svg"
+                  class="img-fluid rounded-start"
+                  alt="Daily Discounts"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p
+                    class="card-title d-flex"
+                    style="
+                      font-weight: 700;
+                      font-size: 35px;
+                      line-height: 42px;
+                      background: linear-gradient(to right, #fb3c00, #ffb900);
+                      -webkit-text-fill-color: transparent;
+                      -webkit-background-clip: text;
+                    "
+                  >
+                    Daily<br />Discounts
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 border-0">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/images/Section two/IconSection2-Live.svg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p
+                    class="card-title d-flex"
+                    style="
+                      font-weight: 700;
+                      font-size: 35px;
+                      line-height: 42px;
+                      background: linear-gradient(to right, #fb3c00, #ffb900);
+                      -webkit-text-fill-color: transparent;
+                      -webkit-background-clip: text;
+                    "
+                  >
+                    Live<br />Tracing
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 border-0">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/images/Section two/IconSection2-Quick.svg"
+                  class="img-fluid rounded-start"
+                  alt="Quick Delivery"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p
+                    class="card-title d-flex"
+                    style="
+                      font-weight: 700;
+                      font-size: 35px;
+                      line-height: 42px;
+                      background: linear-gradient(to right, #fb3c00, #ffb900);
+                      -webkit-text-fill-color: transparent;
+                      -webkit-background-clip: text;
+                    "
+                  >
+                    Quick<br />Delivery
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="Section-Three"
+      style="margin-top: 15vh; background-color: #f6f5ee"
+    >
+      <div class="container" style="padding-top: 3vh; padding-bottom: 3vh">
+        <div>
+          <div
+            style="
+              text-align: left;
+              font-weight: 700;
+              font-size: 43px;
+              line-height: 48.16px;
+              columns: #212121;
+            "
+          >
+            Search by Food
+          </div>
+          <div class="row row-cols-1 row-cols-md-6 g-4" style="margin-top: 8vh">
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section three/image 1Section3-Dosa.png"
+                  class="card-img-top"
+                  style="border-radius: 50%"
+                  alt="vada"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Dosa
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section three/ImageSection3-Aapppm.png"
+                  class="card-img-top"
+                  style="border-radius: 50%"
+                  alt="vada"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Aapppm
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section three/ImageSection3-Puttu.png"
+                  class="card-img-top"
+                  style="border-radius: 50%"
+                  alt="vada"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Puttu
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section three/ImageSection3-Idiyappam.png"
+                  class="card-img-top"
+                  style="border-radius: 50%"
+                  alt="Idly"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Idiyappam
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section three/ImageSection3-Pongal.png"
+                  class="card-img-top"
+                  style="border-radius: 50%"
+                  alt="Parotta"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Pongal
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section three/Food PhotoSection3-Veg Rice.png"
+                  class="card-img-top"
+                  style="border-radius: 50%"
+                  alt="Kichadi"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Veg Rice
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ********************************************************************************************************************************************************************************************************** -->
+    <section class="Section-Four container" style="margin-top: 15vh">
+      <div class="card mb-1 border-0">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <div
+              class="card-body col-12 d-flex flex-column justify-content-center"
+              style="height: 46vh"
+            >
+              <p
+                class="card-title"
+                style="
+                  font-weight: 700;
+                  font-size: 43px;
+                  line-height: 48.16px;
+                  color: #353535;
+                "
+              >
+                Best deals <span style="color: #ffb30e">Crispy Diffen</span>
+              </p>
+              <p
+                class="card-text"
+                style="
+                  font-family: 'Open Sans', sans-serif;
+                  font-weight: 600;
+                  font-size: 18px;
+                  line-height: 25.2px;
+                  columns: #616161;
+                "
+              >
+                Enjoy the large size of Dosa. Complete perfect slice of Dosa.
+              </p>
+              <a
+                class="col col-12 btn Proceed-button"
+                style="
+                  background: linear-gradient(
+                    92.84deg,
+                    #ffb800 -47.72%,
+                    #ff8a00 136.81%
+                  );
+                  color: #ffffff;
+                  font-weight: 700;
+                  font-size: 18px;
+                  line-height: 18px;
+                  text-align: center;
+                "
+              >
+                Proceed to order
+              </a>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <img
+              src="/images/Section four/ImageSection4-RightIMG.png"
+              class="img-fluid rounded-start"
+              alt="IMAGE"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************************************************************************************************************************************************************************************************************************************************************* -->
+    <section class="Section-Five" style="margin-top: 15vh">
+      <div
+        style="
+          font-size: 43px;
+          font-weight: 700;
+          line-height: 48.1px;
+          text-align: center;
+          color: #212121;
+        "
+      >
+        Popular items
+      </div>
+      <div>
+        <section class="Section-One container-md" style="margin-top: 10vh">
+          <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section Five/Rectangle 336Section5-Murukku.png"
+                  class="card-img-top"
+                  alt="Murukku"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Murukku
+                  </p>
+                  <a
+                    href="#"
+                    class="card-footer btn col-md-12"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #ffffff;
+                      background-color: #f17228;
+                      text-align: center;
+                    "
+                  >
+                    Order Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section Five/Rectangle 336Section5-Paniyaram.png"
+                  class="card-img-top"
+                  alt="Paniyaram"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Paniyaram
+                  </p>
+                  <a
+                    href="#"
+                    class="card-footer btn col-md-12"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #ffffff;
+                      background-color: #f17228;
+                      text-align: center;
+                    "
+                  >
+                    Order Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section Five/Rectangle 336Section5-Seeval Murukku.png"
+                  class="card-img-top"
+                  alt="Seeval Murukku"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Seeval Murukku
+                  </p>
+                  <a
+                    href="#"
+                    class="card-footer btn col-md-12"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #ffffff;
+                      background-color: #f17228;
+                      text-align: center;
+                    "
+                  >
+                    Order Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section Five/Rectangle 336Section5-Mixture.png"
+                  class="card-img-top"
+                  alt="Mixture"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Mixture
+                  </p>
+                  <a
+                    href="#"
+                    class="card-footer btn col-md-12"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #ffffff;
+                      background-color: #f17228;
+                      text-align: center;
+                    "
+                  >
+                    Order Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section Five/Rectangle 336Section5-Veg Soup.png"
+                  class="card-img-top"
+                  alt="Veg soup"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Veg Soup
+                  </p>
+                  <a
+                    href="#"
+                    class="card-footer btn col-md-12"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #ffffff;
+                      background-color: #f17228;
+                      text-align: center;
+                    "
+                  >
+                    Order Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section Five/Rectangle 339Section5-Gulab Jamun.png"
+                  class="card-img-top"
+                  alt="Gulab Jamun"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Gulab Jamun
+                  </p>
+                  <a
+                    href="#"
+                    class="card-footer btn col-md-12"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #ffffff;
+                      background-color: #f17228;
+                      text-align: center;
+                    "
+                  >
+                    Order Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section Five/Rectangle 340Section5-Porivellangai Urundai.png"
+                  class="card-img-top"
+                  alt="Porivellangai Urundai"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      width: 35vh;
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                    "
+                  >
+                    Porivellangai Urundai
+                  </p>
+                  <a
+                    href="#"
+                    class="card-footer btn col-md-12"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #ffffff;
+                      background-color: #f17228;
+                      text-align: center;
+                    "
+                  >
+                    Order Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section Five/Rectangle 341Section5-Jangri.png"
+                  class="card-img-top"
+                  alt="Jangri"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Jangri
+                  </p>
+                  <a
+                    href="#"
+                    class="card-footer btn col-md-12"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #ffffff;
+                      background-color: #f17228;
+                      text-align: center;
+                    "
+                  >
+                    Order Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section Five/Rectangle 342Section5-Lattu.png"
+                  class="card-img-top"
+                  alt="Lattu"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Lattu
+                  </p>
+                  <a
+                    href="#"
+                    class="card-footer btn col-md-12"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #ffffff;
+                      background-color: #f17228;
+                      text-align: center;
+                    "
+                  >
+                    Order Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <img
+                  src="/images/Section Five/Rectangle 343Section5-Halwa.png"
+                  class="card-img-top"
+                  alt="Halwa"
+                />
+                <div class="card-body">
+                  <p
+                    class="card-title"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #424242;
+                      text-align: center;
+                    "
+                  >
+                    Halwa
+                  </p>
+                  <a
+                    href="#"
+                    class="card-footer btn col-md-12"
+                    style="
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 26.4px;
+                      color: #ffffff;
+                      background-color: #f17228;
+                      text-align: center;
+                    "
+                  >
+                    Order Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <footer style="background-color: #090d12">
+      <div style="padding-top: 5vh; padding-bottom: 5vh">
+        <div class="container">
+          <div>
+            <img
+              class="col-12"
+              src="/images/Footer/HRFooter Top line.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="Foter-content container d-flex"
+            style="margin-top: 5vh; margin-bottom: 5vh"
+          >
+            <div class="col col-6">
+              <div class="row row-cols-3">
+                <div
+                  class="col"
+                  style="
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 26.4px;
+                    color: #ffffff;
+                  "
+                >
+                  Company
+                </div>
+                <div
+                  class="col"
+                  style="
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 26.4px;
+                    color: #ffffff;
+                  "
+                >
+                  Contact
+                </div>
+                <div
+                  class="col"
+                  style="
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 26.4px;
+                    color: #ffffff;
+                  "
+                >
+                  Legal
+                </div>
+              </div>
+              <div style="margin-top: 2vh">
+                <div class="row row-cols-3">
+                  <div>
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #f5f5f5;
+                      "
+                      >About us</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #f5f5f5;
+                      "
+                      >Help & Support</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #f5f5f5;
+                      "
+                      >Terms & Conditions</a
+                    >
+                  </div>
+                </div>
+                <div class="row row-cols-3">
+                  <div>
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #f5f5f5;
+                      "
+                      >Team</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #f5f5f5;
+                      "
+                      >Partner with us</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #f5f5f5;
+                      "
+                      >Refund & Cancellation</a
+                    >
+                  </div>
+                </div>
+                <div class="row row-cols-3">
+                  <div>
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #f5f5f5;
+                      "
+                      >Careers</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #f5f5f5;
+                      "
+                      >Ride with us</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #f5f5f5;
+                      "
+                      >Privacy Policy</a
+                    >
+                  </div>
+                </div>
+                <div class="row row-cols-3">
+                  <div>
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #f5f5f5;
+                      "
+                      >Blog</a
+                    >
+                  </div>
+                  <div></div>
+                  <div>
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #f5f5f5;
+                      "
+                      >Cookie Policy</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col offset-1 col-5 d-flex flex-column justify-content-evenly"
+            >
+              <div
+                style="
+                  font-weight: 700;
+                  font-size: 18px;
+                  line-height: 21.6px;
+                  color: #f5f5f5;
+                "
+              >
+                Follow Us
+              </div>
+              <div>
+                <a href="#"
+                  ><img
+                    src="/images/Footer/IconsFooter-Social Media.svg"
+                    alt="Social media"
+                /></a>
+              </div>
+              <div
+                style="
+                  font-family: 'Open Sans', sans-serif;
+                  font-weight: 700;
+                  font-size: 18px;
+                  line-height: 25.2px;
+                  color: #bbbbbb;
+                "
+              >
+                Receive exclusive offers in your mailbox
+              </div>
+              <div>
+                <form
+                  class="col d-flex justify-content-between"
+                  style="width: 30vw"
+                  role="search"
+                >
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="&#xf0e0; Enter Your email"
+                    aria-label="Search"
+                    style="
+                      font-family: 'Open Sans', sans-serif, FontAwesome;
+                      font-weight: 400;
+                      font-size: 18px;
+                      line-height: 25.2px;
+                    "
+                  />
+                  <div
+                    class="col col-3"
+                    style="
+                      background: linear-gradient(
+                        92.84deg,
+                        #ffb800 -47.72%,
+                        #ff8a00 136.81%
+                      );
+                      border-radius: 8px;
+                      text-align: center;
+                      display: flex;
+                      justify-content: center;
+                    "
+                  >
+                    <button
+                      class="btn"
+                      type="submit"
+                      style="
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 18px;
+                        text-align: center;
+                        color: #ffffff;
+                      "
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="col-12"
+              src="/images/Footer/HRFooter Bottom Line.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <nav class="navbar" style="background-color: #090d12">
+          <div class="container">
+            <div
+              class="col-2"
+              style="
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                color: #f5f5f5;
+              "
+            >
+              All rights Reserved ©
+            </div>
+            <div
+              class="col offset-8 col-2"
+              style="
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                color: #f5f5f5;
+              "
+            >
+              Made With 💛 by <span style="font-weight: 700">Raja Ramanathan</span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </footer>
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/de5265fb52.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

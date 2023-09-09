@@ -1,0 +1,14 @@
+body{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Source Sans 3', sans-serif;
+}
+::after
+::before{
+    box-sizing: border-box;
+}
+.Proceed-button::after{
+    font-family: fontAwesome;
+    content: "\f054\00a0";
+}
